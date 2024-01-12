@@ -519,12 +519,12 @@ class HomeView extends GetView<HomeController> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 ),
                                 Column(
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     Row(
@@ -557,7 +557,7 @@ class HomeView extends GetView<HomeController> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     Divider(
@@ -569,7 +569,7 @@ class HomeView extends GetView<HomeController> {
                                 ),
                                 Column(
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     Row(
@@ -602,7 +602,7 @@ class HomeView extends GetView<HomeController> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     Divider(
@@ -614,7 +614,7 @@ class HomeView extends GetView<HomeController> {
                                 ),
                                 Column(
                                   children: [
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     Row(
@@ -647,7 +647,7 @@ class HomeView extends GetView<HomeController> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     Divider(
