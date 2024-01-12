@@ -245,8 +245,8 @@ class HomeView extends GetView<HomeController> {
                               ],
                             ),
                           ),
-                          // const Divider(),
 
+                          ///
                           ///
                           ///
                           ///
@@ -584,7 +584,7 @@ class HomeView extends GetView<HomeController> {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             Expanded(
