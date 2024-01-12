@@ -11,7 +11,7 @@ class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // var size = MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       drawer: const HomeDrawer(),
       appBar: AppBar(
@@ -24,44 +24,44 @@ class HomeView extends GetView<HomeController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Expanded(
-              flex: 1,
-              child: IntrinsicHeight(
-                child: ListView(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    for (var i = 0; i < 20; i++)
-                      Card(
-                        color: appColor(context).useScheme.primaryContainer,
-                        child: Padding(
-                          padding: const EdgeInsets.all(15),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "F$i",
-                                style: appFont(context).headlineSmall?.copyWith(
-                                      color:
-                                          appColor(context).useScheme.primary,
-                                    ),
-                              ),
-                              Text(
-                                "To something F$i",
-                                style: appFont(context).bodySmall?.copyWith(
-                                      color:
-                                          appColor(context).useScheme.primary,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-            ),
+            // Expanded(
+            //   flex: 1,
+            //   child: IntrinsicHeight(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       scrollDirection: Axis.horizontal,
+            //       children: [
+            //         for (var i = 0; i < 20; i++)
+            //           Card(
+            //             color: appColor(context).useScheme.primaryContainer,
+            //             child: Padding(
+            //               padding: const EdgeInsets.all(15),
+            //               child: Column(
+            //                 crossAxisAlignment: CrossAxisAlignment.center,
+            //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //                 children: [
+            //                   Text(
+            //                     "F$i",
+            //                     style: appFont(context).headlineSmall?.copyWith(
+            //                           color:
+            //                               appColor(context).useScheme.primary,
+            //                         ),
+            //                   ),
+            //                   Text(
+            //                     "To something F$i",
+            //                     style: appFont(context).bodySmall?.copyWith(
+            //                           color:
+            //                               appColor(context).useScheme.primary,
+            //                         ),
+            //                   ),
+            //                 ],
+            //               ),
+            //             ),
+            //           ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
             Expanded(
               flex: 10,
               child: Row(
@@ -245,7 +245,7 @@ class HomeView extends GetView<HomeController> {
                               ],
                             ),
                           ),
-                          const Divider(),
+                          // const Divider(),
 
                           ///
                           ///
@@ -487,6 +487,15 @@ class HomeView extends GetView<HomeController> {
                       ),
                     )),
                   ),
+
+                  ///
+                  ///
+                  ///
+                  ///
+                  ///
+                  ///
+                  ///
+                  /// PROMO
                   Expanded(
                     flex: 1,
                     child: Card(
@@ -502,160 +511,12 @@ class HomeView extends GetView<HomeController> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Total",
+                                  "PROMO",
                                   style: appFont(context).bodyLarge?.copyWith(
                                         color: appColor(context)
                                             .useScheme
                                             .onPrimary,
                                       ),
-                                ),
-                                Text(
-                                  "Rp100.000",
-                                  style:
-                                      appFont(context).headlineLarge?.copyWith(
-                                            color: appColor(context)
-                                                .useScheme
-                                                .onPrimary,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                ),
-                                const SizedBox(
-                                  height: 20,
-                                ),
-                                Column(
-                                  children: [
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      children: [
-                                        Expanded(
-                                          child: Text(
-                                            "Total",
-                                            style: appFont(context)
-                                                .bodyLarge
-                                                ?.copyWith(
-                                                  color: appColor(context)
-                                                      .useScheme
-                                                      .onPrimary,
-                                                ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Text(
-                                            "Rp100.000",
-                                            style: appFont(context)
-                                                .headlineSmall
-                                                ?.copyWith(
-                                                  color: appColor(context)
-                                                      .useScheme
-                                                      .onPrimary,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                            textAlign: TextAlign.end,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Divider(
-                                      height: 0,
-                                      color:
-                                          appColor(context).useScheme.onPrimary,
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  children: [
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      children: [
-                                        Expanded(
-                                          child: Text(
-                                            "Diskon",
-                                            style: appFont(context)
-                                                .bodyLarge
-                                                ?.copyWith(
-                                                  color: appColor(context)
-                                                      .useScheme
-                                                      .onPrimary,
-                                                ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Text(
-                                            "10%",
-                                            style: appFont(context)
-                                                .headlineSmall
-                                                ?.copyWith(
-                                                  color: appColor(context)
-                                                      .useScheme
-                                                      .onPrimary,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                            textAlign: TextAlign.end,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Divider(
-                                      height: 0,
-                                      color:
-                                          appColor(context).useScheme.onPrimary,
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  children: [
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      children: [
-                                        Expanded(
-                                          child: Text(
-                                            "Total Final",
-                                            style: appFont(context)
-                                                .bodyLarge
-                                                ?.copyWith(
-                                                  color: appColor(context)
-                                                      .useScheme
-                                                      .onPrimary,
-                                                ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Text(
-                                            "Rp300.000",
-                                            style: appFont(context)
-                                                .headlineSmall
-                                                ?.copyWith(
-                                                  color: appColor(context)
-                                                      .useScheme
-                                                      .onPrimary,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                            textAlign: TextAlign.end,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Divider(
-                                      height: 0,
-                                      color:
-                                          appColor(context).useScheme.onPrimary,
-                                    ),
-                                  ],
                                 ),
                               ],
                             ),
@@ -664,7 +525,100 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ],
               ),
-            )
+            ),
+
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///
+            ///
+            SizedBox(
+              width: size.width,
+              height: size.height / 8,
+              child: Row(
+                children: [
+                  Expanded(
+                      flex: 3,
+                      child: Card(
+                        color: appColor(context).useScheme.primary,
+                      )),
+                  Expanded(
+                    flex: 1,
+                    child: Card(
+                      color: appColor(context).useScheme.primary,
+                      child: Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              flex: 2,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Total Belanja",
+                                    style: appFont(context).bodyLarge?.copyWith(
+                                          color: appColor(context)
+                                              .useScheme
+                                              .onPrimary,
+                                        ),
+                                  ),
+                                  Text(
+                                    "Rp100.000",
+                                    style: appFont(context)
+                                        .headlineSmall
+                                        ?.copyWith(
+                                          color: appColor(context)
+                                              .useScheme
+                                              .onPrimary,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                    textAlign: TextAlign.end,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: appColor(context).useScheme.background,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "BAYAR",
+                                      style:
+                                          appFont(context).bodyMedium?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: appColor(context)
+                                                    .useScheme
+                                                    .primary,
+                                              ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
