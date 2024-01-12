@@ -495,8 +495,170 @@ class HomeView extends GetView<HomeController> {
                           borderRadius: BorderRadius.circular(
                             8,
                           ),
-                          child: const Column(
-                            children: [],
+                          child: Padding(
+                            padding: const EdgeInsets.all(20),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Total",
+                                  style: appFont(context).bodyLarge?.copyWith(
+                                        color: appColor(context)
+                                            .useScheme
+                                            .onPrimary,
+                                      ),
+                                ),
+                                Text(
+                                  "Rp100.000",
+                                  style:
+                                      appFont(context).headlineLarge?.copyWith(
+                                            color: appColor(context)
+                                                .useScheme
+                                                .onPrimary,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            "Total",
+                                            style: appFont(context)
+                                                .bodyLarge
+                                                ?.copyWith(
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .onPrimary,
+                                                ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Text(
+                                            "Rp100.000",
+                                            style: appFont(context)
+                                                .headlineSmall
+                                                ?.copyWith(
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .onPrimary,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                            textAlign: TextAlign.end,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Divider(
+                                      height: 0,
+                                      color:
+                                          appColor(context).useScheme.onPrimary,
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            "Diskon",
+                                            style: appFont(context)
+                                                .bodyLarge
+                                                ?.copyWith(
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .onPrimary,
+                                                ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Text(
+                                            "10%",
+                                            style: appFont(context)
+                                                .headlineSmall
+                                                ?.copyWith(
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .onPrimary,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                            textAlign: TextAlign.end,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Divider(
+                                      height: 0,
+                                      color:
+                                          appColor(context).useScheme.onPrimary,
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            "Total Final",
+                                            style: appFont(context)
+                                                .bodyLarge
+                                                ?.copyWith(
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .onPrimary,
+                                                ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Text(
+                                            "Rp300.000",
+                                            style: appFont(context)
+                                                .headlineSmall
+                                                ?.copyWith(
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .onPrimary,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                            textAlign: TextAlign.end,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Divider(
+                                      height: 0,
+                                      color:
+                                          appColor(context).useScheme.onPrimary,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         )),
                   ),
