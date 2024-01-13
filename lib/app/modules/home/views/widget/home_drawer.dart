@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../../report/views/report_view.dart';
+import '../home_view.dart';
 
 class HomeDrawer extends StatelessWidget {
   const HomeDrawer({super.key});
@@ -12,7 +16,8 @@ class HomeDrawer extends StatelessWidget {
             ListTile(
               title: Text("Menu $i"),
               onTap: () {
-                Navigator.pop(context);
+                // Navigator.pop(context);
+                Get.to(() => const CustomTable());
               },
             ),
         ],

@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:kasir_desktop/app/theme/app_theme.dart';
 
 import '../../../data/random/random_produk.dart';
+import '../../report/views/report_view.dart';
 import '../controllers/home_controller.dart';
 import 'widget/home_drawer.dart';
 
@@ -593,21 +594,28 @@ class HomeView extends GetView<HomeController> {
                                   color: appColor(context).useScheme.background,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "BAYAR",
-                                      style:
-                                          appFont(context).bodyMedium?.copyWith(
-                                                fontWeight: FontWeight.bold,
-                                                color: appColor(context)
-                                                    .useScheme
-                                                    .primary,
-                                              ),
-                                    ),
-                                  ],
+                                child: InkWell(
+                                  onTap: () {
+                                    Get.to(() => const CustomTable());
+                                  },
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "BAYAR",
+                                        style: appFont(context)
+                                            .bodyMedium
+                                            ?.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .primary,
+                                            ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),

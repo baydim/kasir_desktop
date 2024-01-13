@@ -20,10 +20,10 @@ class AppPages {
       page: () => const HomeView(),
       binding: HomeBinding(),
     ),
-    GetPage(
-      name: _Paths.REPORT,
-      page: () => const ReportView(),
-      binding: ReportBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.REPORT,
+    //   page: () => const ReportView(),
+    //   binding: ReportBinding(),
+    // ),
   ];
 }
