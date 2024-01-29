@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -76,7 +75,6 @@ class _CustomTableState extends State<CustomTable> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Data Table Example'),
-        automaticallyImplyLeading: false,
       ),
       body: RawKeyboardListener(
         focusNode: focusNode,
