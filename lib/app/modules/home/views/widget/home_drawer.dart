@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:kasir_desktop/app/routes/app_pages.dart';
 
 import '../../../report/views/report_view.dart';
 
@@ -11,14 +12,22 @@ class HomeDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-          for (var i = 0; i < 10; i++)
-            ListTile(
-              title: Text("Menu $i"),
-              onTap: () {
-                // Navigator.pop(context);
-                Get.to(() => const CustomTable());
-              },
-            ),
+          // for (var i = 0; i < 10; i++)
+          ListTile(
+            title: Text("Master Barang"),
+            onTap: () {
+              // Navigator.pop(context);
+              // Get.to(() => const CustomTable());
+              Get.toNamed(Routes.MASTER_BARANG);
+            },
+          ),
+          ListTile(
+            title: Text("App v2 Beta"),
+            onTap: () {
+              // Navigator.pop(context);
+              Get.to(() => const CustomTable());
+            },
+          ),
         ],
       ),
     );

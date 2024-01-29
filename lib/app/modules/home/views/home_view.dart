@@ -70,303 +70,220 @@ class HomeView extends GetView<HomeController> {
                   Expanded(
                     flex: 3,
                     child: Card(
-                        child: ClipRRect(
-                      borderRadius: BorderRadius.circular(
-                        8,
-                      ),
-                      child: Column(
-                        children: [
-                          IntrinsicHeight(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  flex: 1,
-                                  child: Container(
-                                    padding: const EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                      color:
-                                          appColor(context).useScheme.primary,
-                                    ),
-                                    child: Text(
-                                      "No",
-                                      style:
-                                          appFont(context).bodyLarge?.copyWith(
-                                                fontWeight: FontWeight.bold,
-                                                color: appColor(context)
-                                                    .useScheme
-                                                    .background,
-                                              ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(
+                          8,
+                        ),
+                        child: Column(
+                          children: [
+                            IntrinsicHeight(
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: Container(
+                                      padding: const EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color:
+                                            appColor(context).useScheme.primary,
+                                      ),
+                                      child: Text(
+                                        "No",
+                                        style: appFont(context)
+                                            .bodyLarge
+                                            ?.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .background,
+                                            ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                VerticalDivider(
-                                  thickness: 2,
-                                  color: appColor(context).useScheme.primary,
-                                ),
-                                Expanded(
-                                  flex: 2,
-                                  child: Container(
-                                    padding: const EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                      color:
-                                          appColor(context).useScheme.primary,
-                                    ),
-                                    child: Text(
-                                      "Kode Produk",
-                                      style:
-                                          appFont(context).bodyLarge?.copyWith(
-                                                fontWeight: FontWeight.bold,
-                                                color: appColor(context)
-                                                    .useScheme
-                                                    .background,
-                                              ),
+                                  VerticalDivider(
+                                    thickness: 2,
+                                    color: appColor(context).useScheme.primary,
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: Container(
+                                      padding: const EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color:
+                                            appColor(context).useScheme.primary,
+                                      ),
+                                      child: Text(
+                                        "Kode Produk",
+                                        style: appFont(context)
+                                            .bodyLarge
+                                            ?.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .background,
+                                            ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                VerticalDivider(
-                                  thickness: 2,
-                                  color: appColor(context).useScheme.primary,
-                                ),
-                                Expanded(
-                                  flex: 3,
-                                  child: Container(
-                                    padding: const EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                      color:
-                                          appColor(context).useScheme.primary,
-                                    ),
-                                    child: Text(
-                                      "Nama Produk",
-                                      style:
-                                          appFont(context).bodyLarge?.copyWith(
-                                                fontWeight: FontWeight.bold,
-                                                color: appColor(context)
-                                                    .useScheme
-                                                    .background,
-                                              ),
+                                  VerticalDivider(
+                                    thickness: 2,
+                                    color: appColor(context).useScheme.primary,
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Container(
+                                      padding: const EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color:
+                                            appColor(context).useScheme.primary,
+                                      ),
+                                      child: Text(
+                                        "Nama Produk",
+                                        style: appFont(context)
+                                            .bodyLarge
+                                            ?.copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .background,
+                                            ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                VerticalDivider(
-                                  thickness: 2,
-                                  color: appColor(context).useScheme.primary,
-                                ),
-                                Expanded(
-                                  flex: 2,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        color:
-                                            appColor(context).useScheme.primary,
-                                      ),
-                                      child: Text(
-                                        "@Harga",
-                                        style: appFont(context)
-                                            .bodyLarge
-                                            ?.copyWith(
-                                              fontWeight: FontWeight.bold,
-                                              color: appColor(context)
-                                                  .useScheme
-                                                  .background,
-                                            ),
-                                      )),
-                                ),
-                                VerticalDivider(
-                                  thickness: 2,
-                                  color: appColor(context).useScheme.primary,
-                                ),
-                                Expanded(
-                                  flex: 1,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        color:
-                                            appColor(context).useScheme.primary,
-                                      ),
-                                      child: Text(
-                                        "Qty",
-                                        style: appFont(context)
-                                            .bodyLarge
-                                            ?.copyWith(
-                                              fontWeight: FontWeight.bold,
-                                              color: appColor(context)
-                                                  .useScheme
-                                                  .background,
-                                            ),
-                                      )),
-                                ),
-                                VerticalDivider(
-                                  thickness: 2,
-                                  color: appColor(context).useScheme.primary,
-                                ),
-                                Expanded(
-                                  flex: 1,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        color:
-                                            appColor(context).useScheme.primary,
-                                      ),
-                                      child: Text(
-                                        "Diskon",
-                                        style: appFont(context)
-                                            .bodyLarge
-                                            ?.copyWith(
-                                              fontWeight: FontWeight.bold,
-                                              color: appColor(context)
-                                                  .useScheme
-                                                  .background,
-                                            ),
-                                      )),
-                                ),
-                                VerticalDivider(
-                                  thickness: 2,
-                                  color: appColor(context).useScheme.primary,
-                                ),
-                                Expanded(
-                                  flex: 2,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        color:
-                                            appColor(context).useScheme.primary,
-                                      ),
-                                      child: Text(
-                                        "Total Harga",
-                                        style: appFont(context)
-                                            .bodyLarge
-                                            ?.copyWith(
-                                              fontWeight: FontWeight.bold,
-                                              color: appColor(context)
-                                                  .useScheme
-                                                  .background,
-                                            ),
-                                      )),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          ///
-                          Expanded(
-                            child: ListView(
-                              children: [
-                                for (var i = 0; i < dataProduk.length; i++)
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      color: i.isOdd
-                                          ? appColor(context)
+                                  VerticalDivider(
+                                    thickness: 2,
+                                    color: appColor(context).useScheme.primary,
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: Container(
+                                        padding: const EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                          color: appColor(context)
                                               .useScheme
-                                              .secondaryContainer
-                                          : Colors.transparent,
-                                    ),
-                                    child: IntrinsicHeight(
-                                      child: Row(
-                                        children: [
-                                          Expanded(
-                                            flex: 1,
-                                            child: Container(
-                                              padding: const EdgeInsets.all(10),
-                                              decoration: const BoxDecoration(
-                                                  // color: appColor(context)
-                                                  //     .useScheme
-                                                  //     .primary,
-                                                  ),
-                                              child: Text(
-                                                (i + 1).toString(),
-                                                style: appFont(context)
-                                                    .bodyLarge
-                                                    ?.copyWith(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      color: appColor(context)
-                                                          .useScheme
-                                                          .onBackground,
-                                                    ),
+                                              .primary,
+                                        ),
+                                        child: Text(
+                                          "@Harga",
+                                          style: appFont(context)
+                                              .bodyLarge
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: appColor(context)
+                                                    .useScheme
+                                                    .background,
                                               ),
-                                            ),
-                                          ),
-                                          VerticalDivider(
-                                            thickness: 2,
-                                            color: appColor(context)
-                                                .useScheme
-                                                .primary,
-                                          ),
-                                          Expanded(
-                                            flex: 2,
-                                            child: Container(
-                                              padding: const EdgeInsets.all(10),
-                                              decoration: const BoxDecoration(
-                                                  // color: appColor(context)
-                                                  //     .useScheme
-                                                  //     .primary,
-                                                  ),
-                                              child: Text(
-                                                dataProduk[i].kodeProduk ??
-                                                    "0000",
-                                                style: appFont(context)
-                                                    .bodyLarge
-                                                    ?.copyWith(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      color: appColor(context)
-                                                          .useScheme
-                                                          .onBackground,
-                                                    ),
+                                        )),
+                                  ),
+                                  VerticalDivider(
+                                    thickness: 2,
+                                    color: appColor(context).useScheme.primary,
+                                  ),
+                                  Expanded(
+                                    flex: 1,
+                                    child: Container(
+                                        padding: const EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                          color: appColor(context)
+                                              .useScheme
+                                              .primary,
+                                        ),
+                                        child: Text(
+                                          "Qty",
+                                          style: appFont(context)
+                                              .bodyLarge
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: appColor(context)
+                                                    .useScheme
+                                                    .background,
                                               ),
-                                            ),
-                                          ),
-                                          VerticalDivider(
-                                            thickness: 2,
-                                            color: appColor(context)
-                                                .useScheme
-                                                .primary,
-                                          ),
-                                          Expanded(
-                                            flex: 3,
-                                            child: Container(
-                                              padding: const EdgeInsets.all(10),
-                                              decoration: const BoxDecoration(
-                                                  // color: appColor(context)
-                                                  //     .useScheme
-                                                  //     .primary,
-                                                  ),
-                                              child: Text(
-                                                dataProduk[i].namaProduk ??
-                                                    "ANONIM PRODUK",
-                                                style: appFont(context)
-                                                    .bodyLarge
-                                                    ?.copyWith(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      color: appColor(context)
-                                                          .useScheme
-                                                          .onBackground,
-                                                    ),
+                                        )),
+                                  ),
+                                  // VerticalDivider(
+                                  //   thickness: 2,
+                                  //   color: appColor(context).useScheme.primary,
+                                  // ),
+                                  // Expanded(
+                                  //   flex: 1,
+                                  //   child: Container(
+                                  //       padding: const EdgeInsets.all(10),
+                                  //       decoration: BoxDecoration(
+                                  //         color:
+                                  //             appColor(context).useScheme.primary,
+                                  //       ),
+                                  //       child: Text(
+                                  //         "Diskon",
+                                  //         style: appFont(context)
+                                  //             .bodyLarge
+                                  //             ?.copyWith(
+                                  //               fontWeight: FontWeight.bold,
+                                  //               color: appColor(context)
+                                  //                   .useScheme
+                                  //                   .background,
+                                  //             ),
+                                  //       )),
+                                  // ),
+                                  VerticalDivider(
+                                    thickness: 2,
+                                    color: appColor(context).useScheme.primary,
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: Container(
+                                        padding: const EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                          color: appColor(context)
+                                              .useScheme
+                                              .primary,
+                                        ),
+                                        child: Text(
+                                          "Total Harga",
+                                          style: appFont(context)
+                                              .bodyLarge
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.bold,
+                                                color: appColor(context)
+                                                    .useScheme
+                                                    .background,
                                               ),
-                                            ),
-                                          ),
-                                          VerticalDivider(
-                                            thickness: 2,
-                                            color: appColor(context)
+                                        )),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            ///
+                            Expanded(
+                              child: ListView(
+                                children: [
+                                  for (var i = 0; i < dataProduk.length; i++)
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: i.isOdd
+                                            ? appColor(context)
                                                 .useScheme
-                                                .primary,
-                                          ),
-                                          Expanded(
-                                            flex: 2,
-                                            child: Container(
+                                                .secondaryContainer
+                                            : Colors.transparent,
+                                      ),
+                                      child: IntrinsicHeight(
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              flex: 1,
+                                              child: Container(
                                                 padding:
                                                     const EdgeInsets.all(10),
                                                 decoration: const BoxDecoration(
@@ -375,9 +292,37 @@ class HomeView extends GetView<HomeController> {
                                                     //     .primary,
                                                     ),
                                                 child: Text(
-                                                  dataProduk[i]
-                                                          .harga
-                                                          ?.toString() ??
+                                                  (i + 1).toString(),
+                                                  style: appFont(context)
+                                                      .bodyLarge
+                                                      ?.copyWith(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        color: appColor(context)
+                                                            .useScheme
+                                                            .onBackground,
+                                                      ),
+                                                ),
+                                              ),
+                                            ),
+                                            VerticalDivider(
+                                              thickness: 2,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .primary,
+                                            ),
+                                            Expanded(
+                                              flex: 2,
+                                              child: Container(
+                                                padding:
+                                                    const EdgeInsets.all(10),
+                                                decoration: const BoxDecoration(
+                                                    // color: appColor(context)
+                                                    //     .useScheme
+                                                    //     .primary,
+                                                    ),
+                                                child: Text(
+                                                  dataProduk[i].kodeProduk ??
                                                       "0000",
                                                   style: appFont(context)
                                                       .bodyLarge
@@ -388,17 +333,18 @@ class HomeView extends GetView<HomeController> {
                                                             .useScheme
                                                             .onBackground,
                                                       ),
-                                                )),
-                                          ),
-                                          VerticalDivider(
-                                            thickness: 2,
-                                            color: appColor(context)
-                                                .useScheme
-                                                .primary,
-                                          ),
-                                          Expanded(
-                                            flex: 1,
-                                            child: Container(
+                                                ),
+                                              ),
+                                            ),
+                                            VerticalDivider(
+                                              thickness: 2,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .primary,
+                                            ),
+                                            Expanded(
+                                              flex: 3,
+                                              child: Container(
                                                 padding:
                                                     const EdgeInsets.all(10),
                                                 decoration: const BoxDecoration(
@@ -407,7 +353,8 @@ class HomeView extends GetView<HomeController> {
                                                     //     .primary,
                                                     ),
                                                 child: Text(
-                                                  "1",
+                                                  dataProduk[i].namaProduk ??
+                                                      "ANONIM PRODUK",
                                                   style: appFont(context)
                                                       .bodyLarge
                                                       ?.copyWith(
@@ -417,76 +364,142 @@ class HomeView extends GetView<HomeController> {
                                                             .useScheme
                                                             .onBackground,
                                                       ),
-                                                )),
-                                          ),
-                                          VerticalDivider(
-                                            thickness: 2,
-                                            color: appColor(context)
-                                                .useScheme
-                                                .primary,
-                                          ),
-                                          Expanded(
-                                            flex: 1,
-                                            child: Container(
-                                                padding:
-                                                    const EdgeInsets.all(10),
-                                                decoration: const BoxDecoration(
-                                                    // color: appColor(context)
-                                                    //     .useScheme
-                                                    //     .primary,
-                                                    ),
-                                                child: Text(
-                                                  dataProduk[i].diskon ?? "0%",
-                                                  style: appFont(context)
-                                                      .bodyLarge
-                                                      ?.copyWith(
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        color: appColor(context)
-                                                            .useScheme
-                                                            .onBackground,
+                                                ),
+                                              ),
+                                            ),
+                                            VerticalDivider(
+                                              thickness: 2,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .primary,
+                                            ),
+                                            Expanded(
+                                              flex: 2,
+                                              child: Container(
+                                                  padding:
+                                                      const EdgeInsets.all(10),
+                                                  decoration: const BoxDecoration(
+                                                      // color: appColor(context)
+                                                      //     .useScheme
+                                                      //     .primary,
                                                       ),
-                                                )),
-                                          ),
-                                          VerticalDivider(
-                                            thickness: 2,
-                                            color: appColor(context)
-                                                .useScheme
-                                                .primary,
-                                          ),
-                                          Expanded(
-                                            flex: 2,
-                                            child: Container(
-                                                padding:
-                                                    const EdgeInsets.all(10),
-                                                decoration: const BoxDecoration(
-                                                    // color: appColor(context)
-                                                    //     .useScheme
-                                                    //     .primary,
-                                                    ),
-                                                child: Text(
-                                                  "Total Harga",
-                                                  style: appFont(context)
-                                                      .bodyLarge
-                                                      ?.copyWith(
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        color: appColor(context)
-                                                            .useScheme
-                                                            .onBackground,
+                                                  child: Text(
+                                                    dataProduk[i]
+                                                            .harga
+                                                            ?.toString() ??
+                                                        "0000",
+                                                    style: appFont(context)
+                                                        .bodyLarge
+                                                        ?.copyWith(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          color:
+                                                              appColor(context)
+                                                                  .useScheme
+                                                                  .onBackground,
+                                                        ),
+                                                  )),
+                                            ),
+                                            VerticalDivider(
+                                              thickness: 2,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .primary,
+                                            ),
+                                            Expanded(
+                                              flex: 1,
+                                              child: Container(
+                                                  padding:
+                                                      const EdgeInsets.all(10),
+                                                  decoration: const BoxDecoration(
+                                                      // color: appColor(context)
+                                                      //     .useScheme
+                                                      //     .primary,
                                                       ),
-                                                )),
-                                          ),
-                                        ],
+                                                  child: Text(
+                                                    "1",
+                                                    style: appFont(context)
+                                                        .bodyLarge
+                                                        ?.copyWith(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          color:
+                                                              appColor(context)
+                                                                  .useScheme
+                                                                  .onBackground,
+                                                        ),
+                                                  )),
+                                            ),
+                                            // VerticalDivider(
+                                            //   thickness: 2,
+                                            //   color: appColor(context)
+                                            //       .useScheme
+                                            //       .primary,
+                                            // ),
+                                            // Expanded(
+                                            //   flex: 1,
+                                            //   child: Container(
+                                            //       padding:
+                                            //           const EdgeInsets.all(10),
+                                            //       decoration: const BoxDecoration(
+                                            //           // color: appColor(context)
+                                            //           //     .useScheme
+                                            //           //     .primary,
+                                            //           ),
+                                            //       child: Text(
+                                            //         dataProduk[i].diskon ?? "0%",
+                                            //         style: appFont(context)
+                                            //             .bodyLarge
+                                            //             ?.copyWith(
+                                            //               fontWeight:
+                                            //                   FontWeight.bold,
+                                            //               color: appColor(context)
+                                            //                   .useScheme
+                                            //                   .onBackground,
+                                            //             ),
+                                            //       )),
+                                            // ),
+                                            VerticalDivider(
+                                              thickness: 2,
+                                              color: appColor(context)
+                                                  .useScheme
+                                                  .primary,
+                                            ),
+                                            Expanded(
+                                              flex: 2,
+                                              child: Container(
+                                                  padding:
+                                                      const EdgeInsets.all(10),
+                                                  decoration: const BoxDecoration(
+                                                      // color: appColor(context)
+                                                      //     .useScheme
+                                                      //     .primary,
+                                                      ),
+                                                  child: Text(
+                                                    "Total Harga",
+                                                    style: appFont(context)
+                                                        .bodyLarge
+                                                        ?.copyWith(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          color:
+                                                              appColor(context)
+                                                                  .useScheme
+                                                                  .onBackground,
+                                                        ),
+                                                  )),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    )),
+                    ),
                   ),
 
                   ///
