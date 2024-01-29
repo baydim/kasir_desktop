@@ -143,25 +143,25 @@ class MasterBarangView extends GetView<MasterBarangController> {
                     //             ),
                     //       )),
                     // ),
-                    // VerticalDivider(
-                    //   thickness: 2,
-                    //   color: appColor(context).useScheme.primary,
-                    // ),
-                    // Expanded(
-                    //   flex: 2,
-                    //   child: Container(
-                    //       padding: const EdgeInsets.all(10),
-                    //       decoration: BoxDecoration(
-                    //         color: appColor(context).useScheme.primary,
-                    //       ),
-                    //       child: Text(
-                    //         "Total Harga",
-                    //         style: appFont(context).bodyLarge?.copyWith(
-                    //               fontWeight: FontWeight.bold,
-                    //               color: appColor(context).useScheme.background,
-                    //             ),
-                    //       )),
-                    // ),
+                    VerticalDivider(
+                      thickness: 2,
+                      color: appColor(context).useScheme.primary,
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: appColor(context).useScheme.primary,
+                          ),
+                          child: Text(
+                            "",
+                            style: appFont(context).bodyLarge?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: appColor(context).useScheme.background,
+                                ),
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -337,39 +337,65 @@ class MasterBarangView extends GetView<MasterBarangController> {
                               //             ),
                               //       )),
                               // ),
-                              // VerticalDivider(
-                              //   thickness: 2,
-                              //   color: appColor(context).useScheme.primary,
-                              // ),
-                              // Expanded(
-                              //   flex: 2,
-                              //   child: Container(
-                              //       padding: const EdgeInsets.all(10),
-                              //       decoration: const BoxDecoration(
-                              //           // color: appColor(context)
-                              //           //     .useScheme
-                              //           //     .primary,
-                              //           ),
-                              //       child: Text(
-                              //         "Total Harga",
-                              //         style:
-                              //             appFont(context).bodyLarge?.copyWith(
-                              //                   fontWeight: FontWeight.bold,
-                              //                   color: appColor(context)
-                              //                       .useScheme
-                              //                       .onBackground,
-                              //                 ),
-                              //       )),
-                              // ),
+                              VerticalDivider(
+                                thickness: 2,
+                                color: appColor(context).useScheme.primary,
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: InkWell(
+                                  onTap: () {},
+                                  child: Container(
+                                      padding: const EdgeInsets.all(10),
+                                      decoration: const BoxDecoration(
+                                          // color: appColor(context)
+                                          //     .useScheme
+                                          //     .primary,
+                                          ),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.delete_forever_rounded,
+                                            color: appColor(context)
+                                                .useScheme
+                                                .error,
+                                          ),
+                                          const SizedBox(
+                                            width: 10,
+                                          ),
+                                          Text(
+                                            "Hapus",
+                                            style: appFont(context)
+                                                .bodyLarge
+                                                ?.copyWith(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: appColor(context)
+                                                      .useScheme
+                                                      .error,
+                                                ),
+                                          ),
+                                        ],
+                                      )),
+                                ),
+                              ),
                             ],
                           ),
                         ),
                       ),
+                    const SizedBox(
+                      height: kToolbarHeight * 2,
+                    ),
                   ],
                 ),
               ),
             ],
           ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        label: const Text(
+          "Tambah Barang",
         ),
       ),
     );

@@ -14,7 +14,7 @@ class HomeDrawer extends StatelessWidget {
         children: [
           // for (var i = 0; i < 10; i++)
           ListTile(
-            title: Text("Master Barang"),
+            title: const Text("Master Barang"),
             onTap: () {
               // Navigator.pop(context);
               // Get.to(() => const CustomTable());
@@ -22,7 +22,7 @@ class HomeDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text("App v2 Beta"),
+            title: const Text("App v2 Beta"),
             onTap: () {
               // Navigator.pop(context);
               Get.to(() => const CustomTable());

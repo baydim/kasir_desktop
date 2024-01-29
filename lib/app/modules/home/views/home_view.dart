@@ -6,6 +6,7 @@ import 'package:kasir_desktop/app/theme/app_theme.dart';
 import '../../../data/random/random_produk.dart';
 import '../../report/views/report_view.dart';
 import '../controllers/home_controller.dart';
+import 'widget/dialog_bayar.dart';
 import 'widget/home_drawer.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -609,7 +610,12 @@ class HomeView extends GetView<HomeController> {
                                 ),
                                 child: InkWell(
                                   onTap: () {
-                                    Get.to(() => const CustomTable());
+                                    // Get.to(() => const CustomTable());
+                                    showDialog(
+                                        context: context,
+                                        builder: (cxt) {
+                                          return DailogBayar();
+                                        });
                                   },
                                   child: Column(
                                     crossAxisAlignment:
